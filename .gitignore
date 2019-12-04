@@ -1,0 +1,7 @@
+##### .gitignore default file. #####
+
+### ignore temp/backup stuff ###
+*~
+.*.swp
+*.bak
+.vagrant
