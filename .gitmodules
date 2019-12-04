@@ -1,0 +1,8 @@
+[submodule "mattermost-server"]
+	path = mattermost-server
+	url = git@github.com:somenet/mattermost-server
+	branch = master
+[submodule "mattermost-webapp"]
+	path = mattermost-webapp
+	url = git@github.com:somenet/mattermost-webapp
+	branch = master
