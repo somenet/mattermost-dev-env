@@ -1,6 +1,5 @@
 #!/bin/bash
 
-usermod -aG docker vagrant
 echo 'export PATH="/usr/local/go/bin:$PATH"' >> /root/.bashrc
 echo 'export PATH="/usr/local/go/bin:$PATH"' >> /etc/profile
 . /etc/profile
@@ -9,6 +8,9 @@ echo 'export PATH="/usr/local/go/bin:$PATH"' >> /etc/profile
 cd /vagrant
 apt update
 apt install -y build-essential curl vim docker-compose docker.io
+usermod -aG docker vagrant
+
+
 apt purge -y apparmor
 rm -rf /usr/local/go
 wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz

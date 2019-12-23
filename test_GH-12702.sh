@@ -18,7 +18,7 @@ curl -d '{"team_id": "'${TEAM_ID}'", "method": "G", "trigger": "c2", "url": "htt
 
 mkdir -p /vagrant/test-ws
 echo '{"text": "Original\n```haskell\nlet\n\nf1 = [ 3 | a <- [1]]\nf2 = [ 4 | b <- [2]]\nf3 = \\p -> 5\n\nin 1\n```", "response_type": "in_channel"}' > /vagrant/test-ws/original.json
-echo '{"text": "Fixed\n```haskell\nlet\n\nf1 = [ 3 | a <- [1]]\nf2 = [ 4 | b <- [2]]\nf3 = \\p -> 5\n\nin 1\n```", "response_type": "in_channel", "skip_slack_parsing":"true"}' > /vagrant/test-ws/fixed.json
+echo '{"text": "Fixed\n```haskell\nlet\n\nf1 = [ 3 | a <- [1]]\nf2 = [ 4 | b <- [2]]\nf3 = \\p -> 5\n\nin 1\n```", "response_type": "in_channel", "skip_slack_parsing":true}' > /vagrant/test-ws/fixed.json
 
 cd /vagrant/test-ws
 python3 -m http.server 31337 &
