@@ -9,4 +9,3 @@ cd /vagrant/mattermost-server
 #make run-server
 make run
 # wait for it to complete
-

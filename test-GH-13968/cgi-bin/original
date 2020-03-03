@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Content-type: application/json"
+echo ""
+echo '{"ephemeral_text": "Original\n```\na < a | b > a\n```"}'

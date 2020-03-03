@@ -1,8 +1,9 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "debian/buster64"
+  config.vm.box = "debian/contrib-buster64"
 
   config.vm.provider "virtualbox" do |v|
     v.name = "mm-dev-env"
+    v.cpus = 4
     v.memory = 4096
   end
 
