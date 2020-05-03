@@ -4,11 +4,11 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |v|
     v.name = "mm-dev-env"
     v.cpus = 4
-    v.memory = 4096
+    v.memory = 8192
   end
 
   config.vm.provider "libvirt" do |v|
-    v.memory = 4096
+    v.memory = 8192
 
     config.vm.synced_folder ".", "/vagrant", type: "rsync"
   end
